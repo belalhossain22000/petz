@@ -287,7 +287,7 @@ small {
 
 /* shop by category */
 .category-title {
-   margin-top: 120px;
+  margin-top: 120px;
   text-align: center;
 }
 button {
@@ -295,7 +295,7 @@ button {
   background: transparent;
   color: white;
 }
-.card-container{
+.card-container {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
@@ -313,7 +313,7 @@ button {
   justify-content: center;
   gap: 40px;
 }
-.category-card > div{
+.category-card > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -340,12 +340,12 @@ button {
 
 /* pet food section */
 
-.pet-food{
+.pet-food {
   margin-top: 120px;
   padding: 123px 0;
   background: #263238;
 }
-.pet-food-title{
+.pet-food-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -353,7 +353,53 @@ button {
 .pet-food-title > h2 {
   color: white;
 }
-.food-conntainer{
+.food-conntainer {
   display: flex;
   gap: 24px;
+}
+/* We Will Make Them Truly Happy */
+.happy-container {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.whit-dog {
+  margin-left: -100px;
+}
+/*----------------------- Client Reviews------------------- */
+.client-review{
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 76px; */
+}
+
+.review-title > h6 {
+  margin: 0;
+  color: #011736;
+  font-family: Kufam;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.review-title > p{
+  margin: 0;
+  color: #6b6675;
+  font-family: Jost;
+  font-size: 16px!important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.review-image{
+  display: flex;
+  align-items: center;
+}
+.happy-customer{
+  position: relative;
+  z-index: 10;
+  margin-right: -200px
 }
