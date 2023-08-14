@@ -367,7 +367,7 @@ button {
   margin-left: -100px;
 }
 /*----------------------- Client Reviews------------------- */
-.client-review{
+.client-review {
   margin-top: 120px;
   display: flex;
   align-items: center;
@@ -384,22 +384,78 @@ button {
   font-weight: 700;
   line-height: 24px; /* 120% */
 }
-.review-title > p{
+.review-title > p {
   margin: 0;
   color: #6b6675;
   font-family: Jost;
-  font-size: 16px!important;
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 500;
   line-height: 28px; /* 175% */
 }
 
-.review-image{
+.review-image {
   display: flex;
   align-items: center;
 }
-.happy-customer{
+.happy-customer {
   position: relative;
   z-index: 10;
-  margin-right: -200px
+  margin-right: -200px;
+}
+
+/* ---------------footer---------------------- */
+footer {
+  margin-top: 120px;
+  margin-bottom: 400px;
+  padding-top: 120px;
+  background: #263238;
+  color: white !important;
+}
+
+.footer-logo {
+  width: 194px;
+  height: 76px;
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin {
+  background: white;
+  padding: 5px;
+  border-radius: 100%;
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin:hover {
+  background: #ff5b2e;
+}
+h3 {
+  color: #fff;
+  /* text-align: center;.all-section-footer{
+     */
+  font-family: Kufam;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 140% */
+}
+.all-section-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  width: 1200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.33);
+}
+footer > small {
+  text-align: center!important;
+  color: #fff;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
 }
