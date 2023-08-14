@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* font-family: Arial, sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Kufam", sans-serif; */
+}
+/* css import font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Kufam:wght@400;500;600;700;800&display=swap");
+/*---------------start---------------- */
+h1 {
+  color: #19063d;
+  font-family: Kufam;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+h2 {
+  color: #19063d;
+  font-family: Kufam;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+a {
+  text-decoration: none;
+}
+/* btn blue && primary */
+.btn-primary {
+  display: inline-flex;
+  padding: 17px 35px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #2178ff;
+  color: #fff;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  border: none;
+}
+/* btn normal */
+.btn-normal {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #000;
+}
+/* btn out line */
+.btn-outline {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 2px solid #2178ff;
+  color: #2178ff;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  transition: background-color 0.7s, color 0.3s;
+}
+.btn-outline:hover {
+  background-color: #2178ff;
+  color: white;
+  font-size: 18px;
+}
+.arrow {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #2178ff;
+  color: white;
+}
+
+p {
+  color: #6b6675;
+  font-family: Kufam;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 190%;
+}
+small {
+  color: #6b6675;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+/* container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+/* nav bar style start */
+.navbar {
+  margin-top: 30px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  /* padding: 30px 20px; */
+}
+/* logo */
+.logo {
+  height: 50px;
+  width: 128px;
+}
+/* nav items */
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav-item {
+  /* color: #19063d; */
+  color: white;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  text-decoration: none;
+}
+.nav-item:hover {
+  color: black;
+  /* background: yellow; */
+}
+.hamburger {
+  display: none;
+}
+
+/* ----------------------Media Query for Small Devices -----------------------*/
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20p;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+  .nav-items.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+  }
+}
+
+/*------------------------- hero section-----------------------  */
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 156px;
+}
+.animal {
+  display: flex;
+  align-items: flex-end;
+}
+.animal > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------feed back section------------------------- */
+.review {
+  background: #263238;
+  color: white;
+}
+.feedbacks {
+  /* height: 350px; */
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 300px; */
+}
+.circle {
+  /* position: relative; */
+  width: 170px;
+  height: 230px;
+  border-radius: 84.5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.feedbacks > img {
+  /* position: relative;
+  left: -80px; */
+}
+.blue-circle {
+  width: 132px;
+  height: 132px;
+  background: #2178ff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.number {
+  color: #fff;
+  text-align: center;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 0;
+}
+.blue-circle > p {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Kufam;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/*----------------- what can we do section --------------------*/
+.can-do {
+  margin-top: 120px;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  min-width: calc(3 * 384px + 2 * 34px); /* Ensure at least 3 columns */
+}
+
+.card {
+  width: 384px;
+  height: 398px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  /* padding: 40px 34px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card > img {
+  height: 120px;
+  width: 120px;
+}
+.card > h6 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: #19063d;
+  text-align: center;
+  font-family: Kufam;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.card > {
+  margin-top: 20px;
+}
+
+/* shop by category */
+.category-title {
+   margin-top: 120px;
+  text-align: center;
+}
+button {
+  border: none;
+  background: transparent;
+  color: white;
+}
+.card-container{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  grid-auto-flow: dense;
+  min-width: calc(3 * 384px + 2 * 24px);
+}
+.category-card {
+  text-align: left;
+  width: 360px;
+  height: 212px;
+  border-radius: 15px;
+  background: #99ce58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.category-card > div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.category-card > div > h5 {
+  text-align: left;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Kufam;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.category-card > div > p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+/* pet food section */
+
+.pet-food{
+  margin-top: 120px;
+  padding: 123px 0;
+  background: #263238;
+}
+.pet-food-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pet-food-title > h2 {
+  color: white;
+}
+.food-conntainer{
+  display: flex;
+  gap: 24px;
+}
