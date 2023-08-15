@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow: hidden; */
   /* font-family: Arial, sans-serif;
   font-family: "Jost", sans-serif;
   font-family: "Kufam", sans-serif; */
@@ -43,10 +43,10 @@ a {
   font-weight: 500;
   line-height: 144%;
   border: none;
-  transition: background-color 0.3s, color 0.3s ;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background: #ffff;
   color: #2178ff;
   border: 1px solid #2178ff;
@@ -542,8 +542,10 @@ footer h6 {
 
 /* media query for responsive */
 @media (max-width: 1024px) {
-  body {
+ 
+  .container-2 {
     padding: 0 20px;
+    box-sizing: border-box; 
   }
   h1 {
     font-size: 50px;
@@ -552,11 +554,18 @@ footer h6 {
   .feedback-text-side p {
     font-size: 17px;
   }
+  /* make happy */
+  .service-dog p{
+    font-size: 18px ;
+  }
 }
+
 @media (max-width: 991px) {
   h1 {
     font-size: 40px;
   }
+  /* make happy */
+  
 }
 
 @media (max-width: 768px) {
@@ -598,14 +607,14 @@ footer h6 {
   footer {
     margin-top: 60px;
     /* margin-bottom: 400px; */
-    padding-top:50px;
+    padding-top: 50px;
     background: #263238;
     color: white !important;
   }
   .order-1 {
     order: 1;
   }
-  
+
   .order-4 {
     order: 4;
   }
@@ -625,7 +634,7 @@ footer h6 {
   .order-1 {
     order: 4;
   }
-  
+
   .order-4 {
     order: 0;
   }
@@ -672,7 +681,7 @@ footer h6 {
     padding: 7px 12px;
     font-size: 16px;
   }
-  .btn-outline{
+  .btn-outline {
     padding: 7px 12px;
     font-size: 16px;
   }
