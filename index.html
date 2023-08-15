@@ -21,35 +21,37 @@
 
 <body>
     <!-- nav bar section -->
-    <header>
-        <nav class="navbar container">
+    <header class="container">
+        <nav class="navbar ">
             <a href="#" class="logo"><img src="./images/navbar/logo.svg" alt=""></a>
             <ul class="nav-items">
                 <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Services</a></li>
+                <li class="nav-item"><a id="services" href="#">Services</a></li>
                 <li class="nav-item"><a href="#">Training</a></li>
                 <li class="nav-item"><a href="#">Madi-care</a></li>
             </ul>
             <button class="btn-outline">Sign In <i class="fa-solid fa-chevron-right"></i></button>
-            <!-- <div class="hamburger">&#9776;</div> -->
+            <div class="hamburger">&#9776;</div>
         </nav>
     </header>
     <!-- home page main section -->
     <main>
         <!-- hero section -->
-        <section class="container">
+        <section class="container hero">
             <div class="hero-top">
                 <h1>An animal's eyes have <br>
                     the power to speak a <br>
-                    great language.</h1>
+                    great language </h1>
                 <div>
-                    <p>There’s a wide array of holiday pet apparel that you can have fun with.</p>
+                    <p>There’s a wide array of holiday pet apparel <br> that you can have fun with.</p>
                     <button class="btn-primary">Shop Now <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
             <div class="animal">
                 <img src="./images/hero/red-dog.png" alt="red dog">
+                <!-- <img class="leg1" src="./images/hero/leg-shape-dog.png" alt=""> -->
                 <img src="./images/hero/black-dog.png" alt="red dog">
+                <!-- <img class="leg2" src="./images/hero/leg-shape-dog.png" alt=""> -->
                 <img src="./images/hero/cat.png" alt="red dog">
             </div>
         </section>
@@ -57,9 +59,11 @@
         <section class="review">
             <div class="container feedbacks">
 
-                <img src="./images/feedback/black-dog.png" alt="">
+                <img src="./images/feedback/black-dog2.png" alt="">
 
-                <div>
+
+
+                <div class="feedback-text-side">
                     <p>Discover the food and environmental factors that your dog <br> is intolerant of. This easy,
                         at-home allergy test will provide <br> a full report on common foods</p>
                 </div>
@@ -70,34 +74,35 @@
                     </div>
                     <h5 class="btn-normal">Learn more <i class="fa-solid fa-chevron-right"></i></h5>
                 </div>
+
             </div>
         </section>
         <!-- what can i do -->
-        <section class="container can-do">
+        <section id="services" class="container can-do">
             <!-- title  -->
-            <div>
+            <!-- <div>
 
                 <h2>What Can We Do</h2>
-                <p>There’s a wide array of holiday pet apparel <br> that you can have fun with. The simple <br> addition
-                    of pet winter sweaters and coats <br> can nicely unify everyone in the picture</p>
-            </div>
+                <p>There’s a wide array of holiday pet apparel  that you can have fun with. The simple ddition
+                    of pet winter sweaters and coats  can nicely unify everyone in the picture</p>
+            </div> -->
             <!-- card1 -->
-            <div class="card">
+            <!-- <div class="card">
                 <img src="./images/what-can we-do/footprint.png" alt="">
                 <h6>Veterinary</h6>
                 <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br> simple
                     addition of pet winter</small>
-            </div>
+            </div> -->
             <!-- card2 -->
-            <div class="card">
+            <!-- <div class="card">
                 <img src="./images/what-can we-do/teeth.png" alt="">
                 <h6>Veterinary</h6>
                 <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br> simple
                     addition of pet winter</small>
-            </div>
+            </div> -->
         </section>
         <!-- Shop By Category -->
-        <section class="container">
+        <!-- <section class="container">
             <div class="category-title">
                 <h2>Shop By Category</h2>
                 <p>There’s a wide array of holiday pet apparel that you can have <br> fun with. The simple addition of
@@ -131,7 +136,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
         <!-- Pet Food Product    -->
         <section class="pet-food">
             <div class="container">
@@ -139,7 +144,7 @@
                     <h2>Pet Food Product</h2>
                     <button class="btn-primary">See All <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
-                <div class="food-conntainer">
+                <div class="food-container">
                     <img src="./images/pet-food/pet-food.png" alt="">
                     <img src="./images/pet-food/pet-food2.png" alt="">
                     <img src="./images/pet-food/pet-food3.png" alt="">
@@ -150,9 +155,12 @@
         </section>
         <!-- We Will Make Them Truly Happy -->
         <section class="container happy-container">
-            <img src="./images/make-happy/black-dog.png" alt="">
-            <img class="whit-dog" src="./images/make-happy/white-dog.png" alt="">
-            <div>
+            <div class="dog">
+
+                <img src="./images/make-happy/black-dog.png" alt="">
+                <img class="whit-dog" src="./images/make-happy/white-dog.png" alt="">
+            </div>
+            <div class="service-dog">
                 <h2>We Will Make Them <br>
                     Truly Happy</h2>
                 <p>There’s a wide array of holiday pet apparel that you can have fun <br> with. The simple addition of
@@ -163,7 +171,7 @@
             </div>
         </section>
         <!-- Client Reviews -->
-        <section class="container client-review">
+        <!-- <section class="container client-review">
             <div class="review-tit">
                 <h2>Client Reviews</h2>
                 <p>There’s a wide array of holiday pet apparel that you <br> can have fun with. The simple addition of
@@ -175,12 +183,12 @@
                 <img class="happy-customer" src="./images/client-review/girl.png" alt="">
                 <img src="./images/client-review/white-dog.png" alt="">
             </div>
-        </section>
+        </section> -->
         <!-- ---------------------footer----------------------- -->
         <footer class="">
             <div class="all-section-footer container">
                 <!-- logo side -->
-                <div>
+                <div class="order-4">
                     <img class="footer-logo" src="./images/navbar/logo.svg" alt="">
                     <p>Only Pets lover can find has friends</p>
                     <div>
@@ -223,7 +231,7 @@
                     </a>
                 </div>
                 <!-- contacts -->
-                <div>
+                <div class="order-1" >
                     <h3>Contacts</h3>
                     <a href="#">
                         <p> About Us
@@ -238,16 +246,15 @@
                     <a href="#">
                         <p>Career</p>
                     </a>
-    
-    
-    
                 </div>
             </div>
-           
-            <small class="copy-right">Copyright ©2022 Design By Oyolloo</small>
+            <div class="line"></div>
+            <h6 class="copy-right">Copyright ©2022 Design By Oyolloo</h6>
         </footer>
-
+        <!--  -->
     </main>
+
+
     <!-- added here script file -->
     <script src="script.js"></script>
 </body>

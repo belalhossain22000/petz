@@ -43,7 +43,16 @@ a {
   font-weight: 500;
   line-height: 144%;
   border: none;
+  transition: background-color 0.3s, color 0.3s ;
 }
+
+.btn-primary:hover{
+  background: #ffff;
+  color: #2178ff;
+  border: 1px solid #2178ff;
+  /* transform: scale(0.1) */
+}
+
 /* btn normal */
 .btn-normal {
   color: #000;
@@ -112,8 +121,6 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
-  /* padding: 30px 20px; */
 }
 /* logo */
 .logo {
@@ -128,7 +135,6 @@ small {
   gap: 50px;
 }
 .nav-item {
-  /* color: #19063d; */
   color: white;
   font-family: Jost;
   font-size: 18px;
@@ -139,7 +145,6 @@ small {
 }
 .nav-item:hover {
   color: black;
-  /* background: yellow; */
 }
 .hamburger {
   display: none;
@@ -147,11 +152,9 @@ small {
 
 /* ----------------------Media Query for Small Devices -----------------------*/
 @media (max-width: 768px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20p;
-  }
   .nav-items {
+    color: white;
+    width: 50%;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -165,7 +168,7 @@ small {
   }
   .hamburger {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     top: 20px;
     right: 20px;
     cursor: pointer;
@@ -175,30 +178,88 @@ small {
 }
 
 /*------------------------- hero section-----------------------  */
+/* .fa-solid {
+  background: blue;
+  padding: 5px 5px;
+  border-radius: 100%;
+} */
+.hero {
+  margin-top: 106px;
+}
 .hero-top {
   display: flex;
   align-items: flex-start;
-  gap: 156px;
+  justify-content: space-between;
+}
+.hero-top div {
+  /* background: red; */
+}
+.hero-top h1 {
+  margin: 0;
+  /* background-color: yellow; */
 }
 .animal {
-  display: flex;
+  margin-top: -50px;
+  /* display: flex; */
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: flex-end;
 }
 .animal > img {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: auto;
+  height: auto;
 }
+/* .leg1{
+  width: 50px;
+  height: 40px;
+  position: absolute;
+} */
+/* media query */
+@media (max-width: 768px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: center;
+    /* align-items: fle; */
+  }
+  .animal {
+    margin-top: 50px;
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .animal > img {
+    height: auto;
+    max-width: auto;
+  }
+}
 /* ------------------feed back section------------------------- */
 .review {
+  margin-top: 120px;
   background: #263238;
   color: white;
 }
 .feedbacks {
-  /* height: 350px; */
   display: flex;
   align-items: center;
-  /* margin-bottom: 300px; */
+}
+.feedbacks img {
+  height: auto;
+  width: auto;
+}
+.feedback-text-side p {
+  color: white;
+  word-wrap: break-word; /* Break long words if needed */
+  white-space: normal;
+}
+.feedback-text-side {
+  max-width: 100%;
+  margin-left: -100px;
+  flex-grow: 1;
 }
 .circle {
   /* position: relative; */
@@ -338,7 +399,7 @@ button {
   line-height: 125%;
 }
 
-/* pet food section */
+/* ---------------------pet food section -----------------*/
 
 .pet-food {
   margin-top: 120px;
@@ -353,13 +414,19 @@ button {
 .pet-food-title > h2 {
   color: white;
 }
-.food-conntainer {
-  display: flex;
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  flex: wrap;
   gap: 24px;
 }
 /* We Will Make Them Truly Happy */
 .happy-container {
   margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.dog {
   display: flex;
   align-items: center;
 }
@@ -407,7 +474,7 @@ button {
 /* ---------------footer---------------------- */
 footer {
   margin-top: 120px;
-  margin-bottom: 400px;
+  /* margin-bottom: 400px; */
   padding-top: 120px;
   background: #263238;
   color: white !important;
@@ -422,15 +489,18 @@ footer {
 .fa-instagram,
 .fa-linkedin {
   background: white;
+  color: #000;
   padding: 5px;
   border-radius: 100%;
+  cursor: pointer;
 }
-.fa-facebook-f,
-.fa-twitter,
-.fa-instagram,
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
 .fa-linkedin:hover {
   background: #ff5b2e;
 }
+
 h3 {
   color: #fff;
   /* text-align: center;.all-section-footer{
@@ -443,15 +513,25 @@ h3 {
 }
 .all-section-footer {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
+.all-section-footer div a p {
+  color: white;
+}
+.all-section-footer div p {
+  color: white;
+}
 .line {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   height: 2px;
   background: rgba(255, 255, 255, 0.33);
 }
-footer > small {
-  text-align: center!important;
+footer h6 {
+  text-align: center;
+  padding-bottom: 30px;
   color: #fff;
   font-family: Jost;
   font-size: 16px;
@@ -459,3 +539,149 @@ footer > small {
   font-weight: 500;
   line-height: 28px; /* 175% */
 }
+
+/* media query for responsive */
+@media (max-width: 1024px) {
+  body {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  /* review */
+  .feedback-text-side p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 50px;
+  }
+  /* review section */
+  .review {
+    margin-top: 50px;
+  }
+  .feedbacks {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .circle {
+    margin-bottom: 30px;
+    height: 170px;
+    width: 300px;
+    flex-direction: row;
+    gap: 10%;
+  }
+  .feedback-text-side {
+    margin-left: 20px;
+  }
+  /* pet food */
+  .pet-food {
+    padding: 70px 0;
+  }
+  /* make happy */
+  .happy-container {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  /* footer */
+  .all-section-footer {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  footer {
+    margin-top: 60px;
+    /* margin-bottom: 400px; */
+    padding-top:50px;
+    background: #263238;
+    color: white !important;
+  }
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-4 {
+    order: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  /* pet food product */
+  .food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .food-container img {
+    width: 90%;
+  }
+  /* footer */
+  .order-1 {
+    order: 4;
+  }
+  
+  .order-4 {
+    order: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .animal > img {
+    width: 300px;
+  }
+  /* feed back */
+  .feedback-text-side p {
+    font-size: 16px;
+  }
+  .feedbacks img {
+    width: 280px;
+  }
+  /* pet food product */
+  .btn-primary {
+    padding: 17px 17px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .pet-food {
+    padding: 40px 0;
+  }
+  /* make happy */
+  .dog img {
+    width: 60%;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .animal > img {
+    width: 300px;
+  }
+  /* pet food  */
+  .btn-primary {
+    padding: 7px 12px;
+    font-size: 16px;
+  }
+  .btn-outline{
+    padding: 7px 12px;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+}
+
+/* **************************************************** */
