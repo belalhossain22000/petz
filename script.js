@@ -24,6 +24,6 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-  currentIndex = Math.min(currentIndex + 1, sliderItems.length - 3);
+  currentIndex = Math.min(currentIndex + 1, sliderItems.length - 1);
   updateSliderPosition();
 });
