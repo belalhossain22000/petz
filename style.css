@@ -409,51 +409,69 @@ button {
 }
 
 /* ******************slider style******************** */
-/* <style> */
-.body {
-    position: relative;
-    height: 100%;
+/* Add your styles here */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-*/ .body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+.slider-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.slider-container:first-child {
+  /* margin: 0 0; */
 }
 
-.swiper {
-    width: 100%;
-    height: 100%;
+.slider-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 0 12px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.slider-item img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 760px) {
-    .swiper-button-next {
-        right: 20px;
-        transform: rotate(90deg);
-    }
-
-    .swiper-button-prev {
-        left: 20px;
-        transform: rotate(90deg);
-    }
+.slider-prev,
+.slider-next {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  border: none;
+  background-color: #d7e7ff;
+  color: #2178ff;
+  cursor: pointer;
 }
-/* </style> */
 
+.slider-prev {
+  left: 10px;
+}
 
+.slider-next {
+  right: 10px;
+}
 
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
 
+@media (max-width: 480px) {
+  .slider-item {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
 
 /* ---------------------pet food section -----------------*/
 
