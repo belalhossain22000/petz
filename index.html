@@ -16,7 +16,71 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Petz</title>
+
+    <style>
+        .body {
+            position: relative;
+            height: 100%;
+        }
+
+        */ .body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            font-size: 20px;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            background-color: gray;
+            color: blue;
+            /* display: none; */
+            /* Icon color */
+        }
+
+        /* Button hover styles */
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: blue;
+            color: white;
+            /* Icon color */
+        }
+
+        @media (max-width: 760px) {
+            .swiper-button-next {
+                right: 20px;
+                transform: rotate(90deg);
+            }
+
+            .swiper-button-prev {
+                left: 20px;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -102,41 +166,84 @@
             </div> -->
         </section>
         <!-- Shop By Category -->
-        <!-- <section class="container">
+        <section class="container">
+            <!-- title -->
             <div class="category-title">
                 <h2>Shop By Category</h2>
                 <p>There’s a wide array of holiday pet apparel that you can have <br> fun with. The simple addition of
                     pet
                     winter</p>
             </div>
-            <div class="card-container">
-                <div class="category-card">
-                    <img src="./images/cetagory/dog.png" alt="">
-                    <div>
-                        <h5>Dog</h5>
-                        <p>There’s a wide array of holiday <br> pet apparel that you</p>
-                        <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+            <div class="body">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category-card dog-bg">
+                                <img src="./images/cetagory/dog.png" alt="">
+                                <div>
+                                    <h5>Dog</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card cat-bg">
+                                <img src="./images/cetagory/cat.png" alt="">
+                                <div>
+                                    <h5>Cat</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card rabbit-bg">
+                                <img src="./images/cetagory/here.png" alt="">
+                                <div>
+                                    <h5>Rabbit</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card dog-bg">
+                                <img src="./images/cetagory/dog.png" alt="">
+                                <div>
+                                    <h5>Dog</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card cat-bg">
+                                <img src="./images/cetagory/cat.png" alt="">
+                                <div>
+                                    <h5>Cat</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card rabbit-bg">
+                                <img src="./images/cetagory/here.png" alt="">
+                                <div>
+                                    <h5>Rabbit</h5>
+                                    <p>There’s a wide array of holiday <br> pet apparel that you</p>
+                                    <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="category-card">
-                    <img src="./images/cetagory/dog.png" alt="">
-                    <div>
-                        <h5>Dog</h5>
-                        <p>There’s a wide array of holiday <br> pet apparel that you</p>
-                        <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <img src="./images/cetagory/dog.png" alt="">
-                    <div>
-                        <h5>Dog</h5>
-                        <p>There’s a wide array of holiday <br> pet apparel that you</p>
-                        <button>See All <i class="fa-solid fa-arrow-right-long"></i></button>
-                    </div>
+                    <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="swiper-button-prev"><i class="fa-solid fa-chevron-right"></i></div>
                 </div>
             </div>
-
-        </section> -->
+        </section>
         <!-- Pet Food Product    -->
         <section class="pet-food container-2">
             <div class="container">
@@ -231,7 +338,7 @@
                     </a>
                 </div>
                 <!-- contacts -->
-                <div class="order-1" >
+                <div class="order-1">
                     <h3>Contacts</h3>
                     <a href="#">
                         <p> About Us
@@ -257,6 +364,31 @@
 
     <!-- added here script file -->
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
 </body>
 
 </html>
