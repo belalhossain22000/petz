@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
- 
 }
 /* css import font */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Kufam:wght@400;500;600;700;800&display=swap");
@@ -343,69 +342,6 @@ small {
 .card > {
   margin-top: 20px;
 }
-.text-side{
-  width: 367px;
-  background-color: red;
-}
-/*------------------- slider------------------ */
-.slider1 {
-  background-color: red;
-  /* margin-left: -30%; */
-  width:100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.slider-container1 {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slider-item1 {
-  flex: 0 0 calc(50% - 20px);
-  margin: 0 10px;
-  text-align: center;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.slider-item1 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.slider-prev1,
-.slider-next1 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 20px;
-  border: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.slider-prev1 {
-  left: 10px;
-}
-
-.slider-next1 {
-  right: 10px;
-}
-@media (max-width: 768px) {
-  .slider-item1 {
-    flex: 0 0 calc(100% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-item1 {
-    flex: 0 0 calc(100% - 20px);
-  }
-}
 
 /* ---------------------shop by category-------------------- */
 .category-title {
@@ -601,11 +537,13 @@ button {
   display: flex;
   align-items: center;
 }
+
 .happy-customer {
   position: relative;
   z-index: 10;
   margin-right: -200px;
 }
+/* slider */
 
 /* ---------------footer---------------------- */
 footer {
@@ -733,6 +671,14 @@ footer h6 {
     margin-top: 50px;
     flex-direction: column;
   }
+
+  /* client review  */
+  .client-review {
+    flex-direction: column-reverse;
+  }
+  .happy-customer{
+    margin-right: -100px;
+  }
   /* footer */
   .all-section-footer {
     margin-bottom: 50px;
@@ -772,6 +718,10 @@ footer h6 {
   .order-4 {
     order: 0;
   }
+  /* riveew */
+  .happy-customer{
+    margin-right: -100px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -805,6 +755,11 @@ footer h6 {
   p {
     font-size: 16px;
   }
+  /* review */
+  .review-image img {
+    width: 250px;
+    object-fit: cover;
+  }
 }
 @media (max-width: 375px) {
   .animal > img {
@@ -824,6 +779,15 @@ footer h6 {
   }
   h2 {
     font-size: 19px;
+  }
+  /* client review */
+  .review-image img {
+    width: 200px;
+    object-fit: cover;
+  }
+  .container-2 {
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }
 

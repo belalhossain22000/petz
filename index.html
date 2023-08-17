@@ -16,6 +16,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style sheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="can-do.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Petz</title>
 
 
@@ -80,44 +83,86 @@
             </div>
         </section>
         <!-- what can i do -->
-        <section id="services" class="container can-do container-2">
+        <section class="container can-do container-2">
             <!-- title  -->
             <div class="text-side">
-
                 <h2>What Can We Do</h2>
                 <p>There’s a wide array of holiday pet apparel that you can have fun with. The simple ddition
                     of pet winter sweaters and coats can nicely unify everyone in the picture</p>
-            </div>
-            <div class="slider1">
-                <div class="slider-container1">
-                    <!-- card1 -->
-                    <div class="card slider-item1">
-                        <img src="./images/what-can we-do/footprint.png" alt="">
-                        <h6>Veterinary</h6>
-                        <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
-                            simple
-                            addition of pet winter</small>
-                    </div>
-                    <!-- card2 -->
-                    <div class="card slider-item1">
-                        <img src="./images/what-can we-do/teeth.png" alt="">
-                        <h6>Veterinary</h6>
-                        <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
-                            simple
-                            addition of pet winter</small>
-                    </div>
-                    <!-- card2 -->
-                    <div class="card slider-item1">
-                        <img src="./images/what-can we-do/teeth.png" alt="">
-                        <h6>Veterinary</h6>
-                        <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
-                            simple
-                            addition of pet winter</small>
-                    </div>
+
+                <div>
+                    <!-- batn -->
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+
                 </div>
-                <button class="slider-prev1">Previous</button>
-                <button class="slider-next1">Next</button>
             </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./images/what-can we-do/footprint.png" alt="">
+                            <h6>Veterinary</h6>
+                            <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                                simple
+                                addition of pet winter</small>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./images/what-can we-do/teeth.png" alt="">
+                            <h6>Veterinary</h6>
+                            <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                                simple
+                                addition of pet winter</small>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./images/what-can we-do/teeth.png" alt="">
+                            <h6>Veterinary</h6>
+                            <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                                simple
+                                addition of pet winter</small>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./images/what-can we-do/teeth.png" alt="">
+                            <h6>Veterinary</h6>
+                            <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                                simple
+                                addition of pet winter</small>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+            <!-- card1 -->
+            <!-- <div class="card ">
+                <img src="./images/what-can we-do/footprint.png" alt="">
+                <h6>Veterinary</h6>
+                <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                    simple
+                    addition of pet winter</small>
+            </div> -->
+            <!-- card2 -->
+            <!-- <div class="card ">
+                <img src="./images/what-can we-do/teeth.png" alt="">
+                <h6>Veterinary</h6>
+                <small>There’s a wide array of holiday pet <br> apparel that you can have fun with. The <br>
+                    simple
+                    addition of pet winter</small>
+            </div> -->
 
         </section>
         <!-- Shop By Category -->
@@ -128,6 +173,7 @@
                 <p>There’s a wide array of holiday pet apparel that you can have <br> fun with. The simple addition of
                     pet
                     winter</p>
+
             </div>
 
             <div class="slider">
@@ -210,19 +256,70 @@
             </div>
         </section>
         <!-- Client Reviews -->
-        <!-- <section class="container client-review">
-            <div class="review-tit">
-                <h2>Client Reviews</h2>
-                <p>There’s a wide array of holiday pet apparel that you <br> can have fun with. The simple addition of
-                    pet winter <br> sweaters and coats can nicely unify everyone in the <br> picture</p>
-                <h6>Charles M. Delamora</h6>
-                <small>UI/UX Designer</small>
+        <section class="container-2 {
+            padding: 0 20px;
+            box-sizing: border-box;
+          }">
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="slide">
+                        <div class="container client-review">
+                            <div class="review-tit">
+                                <h2>Client Reviews</h2>
+                                <p>There’s a wide array of holiday pet apparel that you <br> can have fun with. The
+                                    simple addition
+                                    of
+                                    pet winter <br> sweaters and coats can nicely unify everyone in the <br> picture</p>
+                                <h6>Charles M. Delamora</h6>
+                                <small>UI/UX Designer</small>
+                            </div>
+                            <div class="review-image">
+                                <img class="happy-customer" src="./images/client-review/girl.png" alt="">
+                                <img src="./images/client-review/white-dog.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="container client-review">
+                            <div class="review-tit">
+                                <h2>Client Reviews</h2>
+                                <p>There’s a wide array of holiday pet apparel that you <br> can have fun with. The
+                                    simple addition
+                                    of
+                                    pet winter <br> sweaters and coats can nicely unify everyone in the <br> picture</p>
+                                <h6>Charles M. Delamora</h6>
+                                <small>UI/UX Designer</small>
+                            </div>
+                            <div class="review-image">
+                                <img class="happy-customer" src="./images/client-review/girl.png" alt="">
+                                <img src="./images/client-review/white-dog.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="container client-review">
+                            <div class="review-tit">
+                                <h2>Client Reviews</h2>
+                                <p>There’s a wide array of holiday pet apparel that you <br> can have fun with. The
+                                    simple addition
+                                    of
+                                    pet winter <br> sweaters and coats can nicely unify everyone in the <br> picture</p>
+                                <h6>Charles M. Delamora</h6>
+                                <small>UI/UX Designer</small>
+                            </div>
+                            <div class="review-image">
+                                <img class="happy-customer" src="./images/client-review/girl.png" alt="">
+                                <img src="./images/client-review/white-dog.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <!-- Dots will be added dynamically using JavaScript -->
+                </div>
             </div>
-            <div class="review-image">
-                <img class="happy-customer" src="./images/client-review/girl.png" alt="">
-                <img src="./images/client-review/white-dog.png" alt="">
-            </div>
-        </section> -->
+
+        </section>
         <!-- ---------------------footer----------------------- -->
         <footer class="container-2">
             <div class="all-section-footer container">
@@ -296,6 +393,20 @@
 
     <!-- added here script file -->
     <script src="script.js"></script>
+    <script src="review.js"></script>
+    <script src="can-do.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
