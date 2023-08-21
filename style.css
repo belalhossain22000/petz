@@ -307,14 +307,13 @@ small {
 /*----------------- what can we do section --------------------*/
 .can-do {
   margin-top: 120px;
-  display: grid;
+  display: flex;
+  align-items: center;
   gap: 34px;
-  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
-  min-width: calc(3 * 384px + 2 * 34px); /* Ensure at least 3 columns */
 }
 
 .card {
-  width: 384px;
+  width: 350px;
   height: 398px;
   border-radius: 20px;
   border: 1px solid #ccc;
@@ -631,6 +630,12 @@ footer h6 {
   .service-dog p {
     font-size: 18px;
   }
+  .can-do {
+    gap: 0;
+  }
+  .card {
+    width: 300px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -670,14 +675,26 @@ footer h6 {
   .happy-container {
     margin-top: 50px;
     flex-direction: column;
+    align-items: center;
   }
 
   /* client review  */
   .client-review {
     flex-direction: column-reverse;
   }
-  .happy-customer{
+  .happy-customer {
     margin-right: -100px;
+  }
+  /* !cando */
+  .can-do {
+    flex-direction: column;
+  }
+  .text-side {
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    width: 350px;
   }
   /* footer */
   .all-section-footer {
@@ -719,7 +736,7 @@ footer h6 {
     order: 0;
   }
   /* riveew */
-  .happy-customer{
+  .happy-customer {
     margin-right: -100px;
   }
 }

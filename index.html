@@ -87,13 +87,17 @@
             <!-- title  -->
             <div class="text-side">
                 <h2>What Can We Do</h2>
-                <p>There’s a wide array of holiday pet apparel that you can have fun with. The simple ddition
-                    of pet winter sweaters and coats can nicely unify everyone in the picture</p>
+                <p>There’s a wide array of holiday pet apparel <br> that you can have fun with. The simple <br> ddition
+                    of pet winter sweaters and coats <br> can nicely unify everyone in the picture</p>
 
-                <div>
+                <div class="slide-btn">
                     <!-- batn -->
-                    <i class="fa-solid fa-chevron-left"></i>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <div class="btn-perv">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="btn-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
 
                 </div>
             </div>
@@ -142,8 +146,8 @@
                     <!-- Add more slides as needed -->
                 </div>
                 <!-- Navigation arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
 
 
@@ -399,12 +403,18 @@
     <script>
         // Initialize Swiper
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 24,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            // breakpoints: {
+            //     // When window width is >= 768px (medium devices)
+            //     768: {
+            //         slidesPerView: 1,
+            //     }
+            // }
         });
     </script>
 </body>

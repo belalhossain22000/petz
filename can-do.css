@@ -1,3 +1,38 @@
-.swiper-container{
-    overflow: hidden;
+.swiper-container {
+  width:800px;
+ 
+  overflow: hidden;
+  position: relative;
 }
+.slide-btn{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.btn-perv,.btn-next{
+    width: 32px;
+    height: 32px;
+    background-color: #d7e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #2178ff;
+   
+}
+.btn-next:hover{
+    background-color: #2178ff;
+    color:#d7e7ff ;
+
+}
+.btn-perv:hover{
+    background-color: #2178ff;
+    color:#d7e7ff ;}
+
+    @media (max-width: 768px){
+        .swiper-container {
+            width: 100%;
+            /* margin-left: 50%; */
+          }
+    }
